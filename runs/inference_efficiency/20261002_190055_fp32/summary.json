@@ -1,0 +1,57 @@
+{
+  "complete": true,
+  "summary": [
+    {
+      "model": "StarEye",
+      "mode": "forward",
+      "completed_rounds": 5,
+      "latency_mean_ms": 6.546492399999999,
+      "latency_sample_sd_ms": 0.06883586456875024,
+      "pooled_p50_ms": 6.4275499999997265,
+      "pooled_p95_ms": 7.469209999999249,
+      "throughput_mean_fps": 152.3954996590469,
+      "throughput_sample_sd_fps": 1.5898678923202498,
+      "peak_allocated_mib": 95.56005859375,
+      "total_frames": 5000
+    },
+    {
+      "model": "StarEye",
+      "mode": "pipeline",
+      "completed_rounds": 5,
+      "latency_mean_ms": 8.947123880000014,
+      "latency_sample_sd_ms": 0.12338532424541959,
+      "pooled_p50_ms": 8.871499999999699,
+      "pooled_p95_ms": 9.953739999998756,
+      "throughput_mean_fps": 111.6897702150852,
+      "throughput_sample_sd_fps": 1.5357015496731132,
+      "peak_allocated_mib": 98.68505859375,
+      "total_frames": 5000
+    },
+    {
+      "model": "Joint",
+      "mode": "forward",
+      "completed_rounds": 5,
+      "latency_mean_ms": 7.486519360000001,
+      "latency_sample_sd_ms": 0.1130644682457743,
+      "pooled_p50_ms": 7.373249999999665,
+      "pooled_p95_ms": 8.499815000000943,
+      "throughput_mean_fps": 133.30337611299007,
+      "throughput_sample_sd_fps": 1.9897035305525326,
+      "peak_allocated_mib": 98.21435546875,
+      "total_frames": 5000
+    },
+    {
+      "model": "Joint",
+      "mode": "pipeline",
+      "completed_rounds": 5,
+      "latency_mean_ms": 9.93565164,
+      "latency_sample_sd_ms": 0.16811826130988522,
+      "pooled_p50_ms": 9.799100000000394,
+      "pooled_p95_ms": 11.219145000000498,
+      "throughput_mean_fps": 100.59369551961996,
+      "throughput_sample_sd_fps": 1.687000524054629,
+      "peak_allocated_mib": 104.35302734375,
+      "total_frames": 5000
+    }
+  ]
+}

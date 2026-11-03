@@ -1,0 +1,17 @@
+settings_version: 0.0.4
+datasets_dir: D:\Deep_learning\datasets
+weights_dir: D:\Deep_learning\StarEye improve\weights
+runs_dir: D:\Deep_learning\StarEye improve\runs
+uuid: 3155d329363a347efd71b1a50f3cc38e468339cdb8abd127e339e2fe26fdad39
+sync: true
+api_key: ''
+openai_api_key: ''
+clearml: true
+comet: true
+dvc: true
+hub: true
+mlflow: true
+neptune: true
+raytune: true
+tensorboard: true
+wandb: true

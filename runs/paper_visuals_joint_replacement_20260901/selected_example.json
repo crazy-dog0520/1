@@ -1,0 +1,36 @@
+{
+  "protocol": {
+    "baseline": "runs\\ablation_100ep\\Baseline_s0\\weights\\best.pt",
+    "joint": "runs\\ablation_100ep\\MSCAA_SAFusion_s0\\weights\\best.pt",
+    "split": "valid",
+    "confidence": 0.25,
+    "nms_iou": 0.7,
+    "match_iou": 0.5,
+    "imgsz": 640,
+    "selection_mode": "human_recovery",
+    "selection_rule": "Prefer human TP recovery without fish/FP regression; otherwise any TP recovery without FP regression; otherwise FP suppression without TP loss"
+  },
+  "selected": {
+    "image": "dv_0180_jpg.rf.71c72faaeb5092304d1694a7600c797e.jpg",
+    "baseline_fish_gt": 0,
+    "baseline_fish_tp": 0,
+    "baseline_fish_fn": 0,
+    "baseline_fish_fp": 0,
+    "baseline_fish_mean_match_conf": 0.0,
+    "joint_fish_gt": 0,
+    "joint_fish_tp": 0,
+    "joint_fish_fn": 0,
+    "joint_fish_fp": 0,
+    "joint_fish_mean_match_conf": 0.0,
+    "baseline_human_gt": 2,
+    "baseline_human_tp": 1,
+    "baseline_human_fn": 1,
+    "baseline_human_fp": 2,
+    "baseline_human_mean_match_conf": 0.8775173425674438,
+    "joint_human_gt": 2,
+    "joint_human_tp": 2,
+    "joint_human_fn": 0,
+    "joint_human_fp": 0,
+    "joint_human_mean_match_conf": 0.6571748554706573
+  }
+}

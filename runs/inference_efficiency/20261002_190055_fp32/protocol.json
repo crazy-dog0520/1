@@ -1,0 +1,432 @@
+{
+  "imgsz": 640,
+  "precision": "fp32",
+  "device": 0,
+  "warmup": 100,
+  "iterations": 1000,
+  "rounds": 5,
+  "image_count": 100,
+  "sample_seed": 2026,
+  "conf": 0.25,
+  "iou": 0.7,
+  "max_det": 300,
+  "threads": 1,
+  "batch": 1,
+  "backend": "PyTorch CUDA eager",
+  "fusion": true,
+  "created_at_asia_shanghai": "20261002_190055",
+  "script_sha256": "38efe272adf388371cbb8861dac825e41e974b54c40f43062404d469df83fb93",
+  "image_directory": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images",
+  "models": {
+    "StarEye": {
+      "path": "D:\\Deep_learning\\StarEye improve\\runs\\ablation_100ep\\Baseline_s0\\weights\\best.pt",
+      "sha256": "a24cf881ba2e9b6be54e613e7bc8ff758384d20523852ff625c389648c3e91aa"
+    },
+    "Joint": {
+      "path": "D:\\Deep_learning\\StarEye improve\\runs\\ablation_100ep\\MSCAA_SAFusion_s0\\weights\\best.pt",
+      "sha256": "0c19b46ccc7b449ff80fa523ae1c05ca5b2361ea55c356cdb429e095c8b2b64d"
+    }
+  },
+  "image_manifest": [
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\193_jpg.rf.795d35c38527a1238e3290fa1879bc05.jpg",
+      "sha256": "3a2403e7f7d928a789949436e36337c26e5169eda2a640c82df826bb58ded5b0"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\57_jpg.rf.7ec89642cc2f83cbd0167f686f2be74a.jpg",
+      "sha256": "601ca0573310167be4a8d274a3cfe8a44c7293e8b8b982e764bc0ad9d7d63410"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\585_jpg.rf.c56f21d66017621683220fbf5741d4d0.jpg",
+      "sha256": "e400f8d87262527ca02fb7e0f439395b9cdfe07c15849a87bd65a8eafb6bbef9"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\dv_0109_jpg.rf.6aaca77a50bb2d101c8a1e065c49bf30.jpg",
+      "sha256": "69996fd731637736b0ac0a590ca57a5520386b1804a5dcb296db45b0dab214e0"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\dv_0274_jpg.rf.b626e471b3473754b7267ea4b821e37e.jpg",
+      "sha256": "b51e88a65150081a41138090799325f6e1b6b10f92bd934a17df7053d12d0b57"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\dv_0381_jpg.rf.9d667e9b4d9ca247ec44e9295e6f5548.jpg",
+      "sha256": "d39f2993bf00ee2eeb0540b892f626597491cd40ac3928ebd46864682f0e4041"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\dv_0438_jpg.rf.2238a619b3102f51e23e5f953c4f994c.jpg",
+      "sha256": "2a45dea5da297799485f066c0bae7c1b096565645c66b8a2c3d648015c680813"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\dv_0480_jpg.rf.e4b79ad3891ea39e56e67a99d9b700df.jpg",
+      "sha256": "fc7437d34e36a8763af6707a242060389ff6699c60784b06dfcb54be2a070911"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\dv_0633_jpg.rf.98a8b83441d4b63fe7724738c4cc5983.jpg",
+      "sha256": "44e39832ea333d4e0912092f201e242bdab40f8efa1b54b21148f2aa607b6590"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\dv_0672_jpg.rf.fe1176cea162ec9ec3d63300b157ca36.jpg",
+      "sha256": "f2a27a634cf1ffbe0131ef86c3b69018c3c01e3e016082325cfca87999ce5f61"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\dv_0752_jpg.rf.4878ab6770789584e95540a64a47720c.jpg",
+      "sha256": "844bc9d27ce112b61e3f66dff8d8a6f892bea01632244ad1e709d14eb6bb61a0"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\dv_0870_jpg.rf.e20798866e8c547511f2d4468b0c03a0.jpg",
+      "sha256": "a9597f5b080df338893e92dda82823a22a802c6b6d6953649a4376a0a595647e"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\dv_1013_jpg.rf.068a0fde07a56c2c69ed555c1eaf603a.jpg",
+      "sha256": "645a9fb88c20504563eb9c67e2269227f0797e758572364140f3092f50f9d49b"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\dv_1325_jpg.rf.8a62ef94a91ffd868aef5fad33a35931.jpg",
+      "sha256": "f39d3dd97e7825a6da8844ef52dc758fd702a32071c2346678710aae0e58c692"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\dv_1431_jpg.rf.247ed6e11222e00d3335877ee3ae433f.jpg",
+      "sha256": "741d232af2a935e2a23f9fe8a29865d71cc6a32cf37a0f1c95a958bb9b318b65"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\dv_1635_jpg.rf.67e3681cacb0d61625161a48421a458d.jpg",
+      "sha256": "159716e47b5bbcb44f3cda846718f96b542e71ac97604f4e5f5b543bee07e985"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\dv_1643_jpg.rf.164574677ae3297cee039ed35f346382.jpg",
+      "sha256": "3959b4810fb2878f2e1468292c3f48a548018fa967620f6c97aea4a984e0f5fa"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\dv_1676_jpg.rf.7d6b30115e6de7b671b6254f56644326.jpg",
+      "sha256": "10c56a2f664024c86090e06386f080c6aded99d8d074f695c1a5fcde5cd5637c"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\dv_1830_jpg.rf.0edaa0b2a0bbf2fd8339ac0056d1b87e.jpg",
+      "sha256": "5575496af513a60be655975ae6d3bd23ffffdf03eb6dbde8b1f6f665e2fe264b"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\dv_2326_jpg.rf.b30f8c741ac6fc1e7fb8b882f8546617.jpg",
+      "sha256": "f14f480409c36dea2b18a99558c16d57d52f5861a69533bedb47458a8fe31160"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\dv_2548_jpg.rf.7f3450f06da1fb73a00eb16a8557aac2.jpg",
+      "sha256": "1568a3830e938f8c8d5238737b47193499a28994a514acd03b3ba4651b3fd232"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\dv_3304_jpg.rf.cd6cc1af338001f50502a82919a19a82.jpg",
+      "sha256": "ab00fda9fbb88a9511b61c7e0a0c09ebbc0202ddee46b5921324517a660c608a"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\dv_3336_jpg.rf.d948d5c0063259c019951352b20698d8.jpg",
+      "sha256": "1c8d4dbea67e4c1c4463bfbe128455ac84dedc6f33bfe9597e641c19e3529d69"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\dv_3738_jpg.rf.9d24eed7ce3400809486f9bd10a0a463.jpg",
+      "sha256": "e777bbb74a547806f29ad617bdbe9438198191bfde57ff27bda81fb9995424f6"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\dv_4226_jpg.rf.f34f07a80a7d10733275d317aaad4261.jpg",
+      "sha256": "df73481b89e3b0112ec2a0c862d1ae94f08027e356a4a193558a15add8ef8f26"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\dv_4347_jpg.rf.ba8a6bafb7b45ede542e4a4dd86140c7.jpg",
+      "sha256": "330dfec3d27d475652de7a7a041c6293a47c48e47e5a1a30afecf36d4f0a1193"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\dv_4682_jpg.rf.94b1344fb1a970c5c937fc6a8fa9ab89.jpg",
+      "sha256": "129a35abf39f253197a6233fde524c21adbe91d19ab3d4d51fb2e1003c5ca899"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\dv_4782_jpg.rf.54ead73b14dff1c4f385cde751290ee9.jpg",
+      "sha256": "4113cc4f26292ab8d8713a73f78e06e368100329266550a33cf7f2ad204ecdc4"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\dv_5040_jpg.rf.e538e4fd71cdb4f273d70c4817f502ac.jpg",
+      "sha256": "e6eded025d9433ec750de07e0ec9aaa28d40a46f2de9fb53a5189f2658b76746"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\dv_5426_jpg.rf.964f76f372f94a21b7b6a78e88140625.jpg",
+      "sha256": "21c7cc77d5818e07839d41daae13a39d35c212a669783b2dfe21a2cd16c00965"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-005_jpg.rf.7a2d1a302a34a16b0fad12fc2262fcbb.jpg",
+      "sha256": "40da1c0312112029f07ef7b0eff20234b5e0065cf564097f6666b267a22c9fd1"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-005_jpg.rf.c85e369301908b4cca2abda174d7b627.jpg",
+      "sha256": "bdd741910c7598708488040bd918a8f051b5256dd9fc2bcd372a4a0aa5583dad"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-013_jpg.rf.0be75d57971e98772270a5eca6188fe8.jpg",
+      "sha256": "02ed43918d29739be9793cb8fca2c7ee940259291eddb2235a275d39658fac68"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-013_jpg.rf.14bd90c310b96e94018a6ea838be2809.jpg",
+      "sha256": "598b4807474aa27ef0c8ed09b9908653f17a730d02f3fa3b5571a615ba177b3b"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-013_jpg.rf.da96547da9d9ddce4aa3429cc3a6bab6.jpg",
+      "sha256": "4bb3b14064d33f1f62daa0f1431dfe460fa11008df26009ada0fbcee32c677b7"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-016_jpg.rf.3d3e098ad078a178e4ae88d069f1f634.jpg",
+      "sha256": "a85e91b04c3b6e59f63fe998ff103a0b3906a4a2951484e5fad65af069c3cfca"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-020_jpg.rf.2d6e1184467d8d3e3a7e9db5c8ad3cf2.jpg",
+      "sha256": "397eef6bdacccade9733c45e8446fed7ddf9970b88ab29d3e2b550ac6b9c2412"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-022_jpg.rf.982d7c391e7e59a1509eec464d945794.jpg",
+      "sha256": "b401e63a8739367b6b681eed86189df28f1f14a772c7e8c55e1f65b238c7611a"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-024_jpg.rf.d8338b27c06f3cc71d3eb1f5142cdc70.jpg",
+      "sha256": "70677acded95663d9c48f45e713c83ec23af7fe0eae12161fef359f07d29e826"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-026_jpg.rf.73e8cb819b056b12d002f08bcc36cd05.jpg",
+      "sha256": "6c7470fac4a4e049642b2b8ac968a305d2b079140cc233ad31acaa2539b784eb"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-028_jpg.rf.20ad3c8988c24c0ba4885536b936b4f5.jpg",
+      "sha256": "b421d440573386e0f5fce9b2dcd6b88b5a6c4a2e6304ff0d492e380120cde0a1"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-028_jpg.rf.4f722d9ef9f4fbff7f77c0a8f0b3615b.jpg",
+      "sha256": "d217cd99af0db1b65b58cef2e73647327a316a30dfb291d3bd223000f8dcc451"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-032_jpg.rf.eed4f89050010452a88b1a8a91263a73.jpg",
+      "sha256": "944e0808e8f87334d425de67db92f4629c7777d96ae456fbd6f0be3c72419551"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-034_jpg.rf.b0db2cbb5caead9460194314ba160516.jpg",
+      "sha256": "687898d5571b3d9752140fc772e1fa544c4b2e8eac27ef34cafbfd5fb40d2c39"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-037_jpg.rf.005ae44e9902c3e98be3cc1869c1a057.jpg",
+      "sha256": "ec84858f084fc4a3f371d8e77311ffbbec56b6d548dc4d178d2f30a295811cd3"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-037_jpg.rf.e65ffb2cf71d0b61584905abff19fa4d.jpg",
+      "sha256": "f01dac084c8da2a9a8a0dcd2a000bd27831c0ba56ba50bc9046058bca0364972"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-039_jpg.rf.0a923126c0a29aa50cd65fb408cf46ad.jpg",
+      "sha256": "78fe8b65fa7d221319c666d4f7ab7741b8210cd06b1424e8a5a33d862c18eb9e"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-040_jpg.rf.b297954a1a89d1c89d58b56d4bf5867b.jpg",
+      "sha256": "8db3a45ed656b01139a9539441e47b410d470f31e5937bc931e3a5762c6727de"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-040_jpg.rf.f114b824161e0872bade5b8cedfdd3f3.jpg",
+      "sha256": "e0161f0b83d22da4fe74494febd472e8ba4fed6060e939d51fc24745ff28fb33"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-043_jpg.rf.dec3ca64600bb3c2e2567417db339ac8.jpg",
+      "sha256": "47e7d191df131fb6eb7898be233a3c86f0a4c3f60e0e7b39857357fa75cd327e"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-048_jpg.rf.6d29fbd6626cfd13300c9cdffeecec9b.jpg",
+      "sha256": "c507e21f99f8af642e7735952af1b659101a342361bd2d458f972156594432d0"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-048_jpg.rf.d17c68c955caf32a71836114f16ae229.jpg",
+      "sha256": "30b17568127a0857966310b9aca93198c4b42fcddc3c13f18a7ac1b09593df1e"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-051_jpg.rf.4a89a98eee8fff3f2ff3697f244ce1aa.jpg",
+      "sha256": "b2aa45e88b08b0ab7129c6429afb728f31357eadce32782600a60c153ea996c7"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-052_jpg.rf.d3ca01a4413195de0b34a5b259adf4a6.jpg",
+      "sha256": "435755f6ad4c9b03f44a33d4609eb3b200b7eb945b3b9649cf4bac6c55ba3637"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-053_jpg.rf.0a272037a5b364ecb341658877b5f59c.jpg",
+      "sha256": "7d39a94545180bb7a59c115d5a03c846c837936d8f1bf81237c58035dc71f337"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-055_jpg.rf.1b0877dfa2b2e5509a097d8405ee7a57.jpg",
+      "sha256": "c2751ce2d2eb6b04adbc7bad9329459771adf82e88dfcd95cf3ab8cdb290e31f"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-058_jpg.rf.6aa98100ac91b364e08e1cb4d1bbaefd.jpg",
+      "sha256": "5d1d26f2274c33c4299c8cd7fdd21167ae02e13d8742f7e127cd86e817e8226e"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-065_jpg.rf.62dd4f4a6f85983e792e1bb1b6033d01.jpg",
+      "sha256": "696f17087a1d13a0239290e287940fbd784383c0a6985898c19134fc3dfcda10"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-066_jpg.rf.a50c8055dfd24006495272532f39bcc1.jpg",
+      "sha256": "46adc2825c88082edb25feb68d4a13bda0fe71a333e33ac14ced63bb609b005c"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-067_jpg.rf.1579f81a48db4b5c0ae1f25876ac3e32.jpg",
+      "sha256": "391e12e779bf082ee5fd6cf957f2c36c7ee8210ce83183a53a65f59c67058a89"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-069_jpg.rf.b57cd9fa5a3a8f12e8dffa3f835ad906.jpg",
+      "sha256": "454c0e7cd55ba16b3cbee2671dd95e46518b2bcb66984f7c85d9eb8236288109"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-070_jpg.rf.608b4354186611ea01249cb7003e5b34.jpg",
+      "sha256": "ea3274b2e37fa48fb4067a5440b6e5111d4bedb9fa16d6550b652e50cf4a8fa8"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-075_jpg.rf.4cadf699de99f8f6fe39eb155e696bca.jpg",
+      "sha256": "7b73f7fa61e96c003fe27e16150df55d88a484914730661612b57b0113eab220"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-083_jpg.rf.c5263280467fd7801cf482c72c759455.jpg",
+      "sha256": "9e8d3d507d814857cfbbf94a516a06988256f9f991c48b9f2d44a5cfff86852c"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-095_jpg.rf.2d2084d83d3300e2f7688db1ebcbc75f.jpg",
+      "sha256": "b683f2d15367757e7e4e800635b3db54538e8b00bcd795a9e1ab428be34eb3f1"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-096_jpg.rf.5bb41482a14e5f77b1b48b90d57281a6.jpg",
+      "sha256": "89cb0cb8518e16892fd07aeb28824b216d361d523e2f690786d3872c80c25718"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-097_jpg.rf.d5945c36390d30afa7940787bcc9fbde.jpg",
+      "sha256": "a374efc1d98e47614b38931ec1776f11e25dc56e50117afefa02c9240a2fa5a8"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-097_jpg.rf.ea570adaee636fd6eac88d6d702e93d7.jpg",
+      "sha256": "cce2850a91ce60a5c039b8648d853ef9a76e4a020bf3525f42adf3f686ef5dc7"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-099_jpg.rf.513d8b86b41fa9d6c0fa620049ffb9bb.jpg",
+      "sha256": "57acae1b46aaab2263fcc42d4a0404059ffc7505c785a5fb285ec4838e23f772"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-105_jpg.rf.691d595c9f0db93f1981d7c6d8ab0544.jpg",
+      "sha256": "d4609d05b6da91d866dae2787491274604c9f3055878269e390508d26dd41272"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-106_jpg.rf.6c8ba5c56d026694b8475b6a9775d0d6.jpg",
+      "sha256": "32286501b365aa89e7a77bbcafe7cd7a62e4f1b0d252fcddf6369f61ae309b8c"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\ezgif-frame-111_jpg.rf.c653a9967b8dac381e84ac6feb9d1493.jpg",
+      "sha256": "3cb602303e3e1f4d51861cb6af99595936668e9e6683201b0bc4aec3d7630543"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\IMG_6232_PNG.rf.d0bef264b71e8c5f7806bfd0512f88de.jpg",
+      "sha256": "2c6cbdca5a0c5423a3dbd92104b288a8b2f84a4055e1a5b4df1e03aa52a39f91"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\IMG_6241_PNG.rf.b84b76a52d582c242fa0fbffec48d871.jpg",
+      "sha256": "7e4c8e96a2e2735e565b0a1f7b356d4df121bdda975e7bf66026661612edb50d"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\IMG_6261_PNG.rf.93f9f5c2d94018d91fef8098fca2b699.jpg",
+      "sha256": "5259c3ab7a5337d9b0269fe36dab10b885e48000afe130788d588669e68a01e6"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\Screenshot-384-_png.rf.3c850ab3163735a14b9c71d7de5050df.jpg",
+      "sha256": "12e1f83ce984bce81c68eb4cf4abe023111ca6703bba002cbedf8ddc03ad8f3c"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\Screenshot-391-_png.rf.c8211789ba8d2e79c96efd27707c045d.jpg",
+      "sha256": "dee81df9dada7f24cfbee48b776d68841abcbc53f87377c7004d5b86ba19ec6e"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\Screenshot-400-_png.rf.79115a2d3a34a97662f5367226b4af8f.jpg",
+      "sha256": "579d4704d39f4eb26a4a62a011ea45026c97446c16cc6827a67e9b4d662d9c30"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\upload-148-_jpg.rf.5c8e0e75cfaa7e450583974b9a79d5b3.jpg",
+      "sha256": "58eceb0248a760a5df172df54a507011f4950366d1c154fc4daf988909043d5c"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\upload-15-_jpg.rf.1da64ddb66d4a1c00fa1055bbdaf82a9.jpg",
+      "sha256": "4dab9100218dae96dd5403b85b1223e8a4617d7572ff15b677acc752cade1096"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\upload-164-_jpg.rf.8ced5d8f7f139deb0150395d1a748893.jpg",
+      "sha256": "d021d2f9134f6046ab3938b197e4f102721aa89c0d03472b01dc12aa83e722ae"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\upload-170-_jpg.rf.329d7b7865f65d45aaeb9ca1044c1146.jpg",
+      "sha256": "4fe23af51d56346f057851c1da1f8f8e85dcf796666efd1457b09e9198ccaa69"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\upload-2-_png.rf.00e47588499c76452294cf931c049e18.jpg",
+      "sha256": "a5bea25b3d5f53471452749fd16c1af8879dea0c1666d05556358477f637ce33"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\upload-212-_jpg.rf.90d844f586aa80b18eba7390c689efd6.jpg",
+      "sha256": "667d68c516db1e3186775e65d342e617adb8f81298f7be8a0ad228a995c5a750"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\upload-270-_jpg.rf.8752c34813597e9cb94201252054d280.jpg",
+      "sha256": "a8c50f5b37d3a8775ce9e86890799f1d23cbccd0b13730030963b68fc5ba87d0"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\upload-307-_jpg.rf.a243211447724bc9041b8165546bc451.jpg",
+      "sha256": "8c3431670d600e127acc4a57f4942ce0f6e6c4683628ad599a101d05e7c71a58"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\upload-325-_jpg.rf.176c9c3867de1f52cd802e0b9de690b2.jpg",
+      "sha256": "b8878882496ef0ee5a007f0839c4a2117f70f31b18a4fdfd282e4ccd4c7e84c8"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\upload-332-_jpg.rf.1d5123f3936b748a6b5b951aa8f83c4a.jpg",
+      "sha256": "aa5cfccae2676cf60a75317fa282737adb52e27cb4daee48fc346c1937eecccb"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\upload-339-_jpg.rf.9f22d8fb4986ad9a6f305e0391902207.jpg",
+      "sha256": "e8de039ea4d29442323d4326b3f2823733d2016561d2d032d6ea8c8e1d72f0aa"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\upload-391-_jpg.rf.068fcc4e6c9b05cca11268343f83b952.jpg",
+      "sha256": "8bc4fc77f24eb55da7c706c0e740bfaddc522e381255a9322bebf8fce785bb19"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\upload-4-_jpg.rf.209be0a458bc7b89ee9df73750175526.jpg",
+      "sha256": "908c8a85afebd3d829b83cbab1e36e4a05a79726f4e5d67016d0e2d88c6c5112"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\upload-407-_jpg.rf.5112b7f478c623e36cf05f9e27d7a7ec.jpg",
+      "sha256": "8f3c3d89484df5776fa0dd5007a96b7dffafe3050d0cdb25200e330dfd124ad8"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\upload-41-_jpg.rf.984aa4c0f6495b3b38ee6f77d2609cc3.jpg",
+      "sha256": "ba9b160f3e090e24af6daab7b32ffa1a0f6879119c94bef4971e4a81129b68e5"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\upload-439-_jpg.rf.b2e05c36e5def61f6ec42fe2be0741e9.jpg",
+      "sha256": "5137cf1a94e40d045dca2687d4df1527715df2b8ca2747d72c8f02e85623ab71"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\upload-44-_jpg.rf.d42f8a899e9c66f744d60c1e028760d5.jpg",
+      "sha256": "d3d93ce1de9b779b5172d46450c123977c40b315c574dd97c49d6116b2778b62"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\upload-461-_jpg.rf.de344fab8cba63e499daa848c6f24f0a.jpg",
+      "sha256": "038676078d7356b786d10510425aa790ca595b74778e03951117aae34d905d9d"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\upload-469-_jpg.rf.55a2d17777cdcc8bc9b3a03220dca6dd.jpg",
+      "sha256": "39776c607119ea15a13affce49f6cff69f17a1c287a4f1cced2524c4a77a6066"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\upload-6-_jpg.rf.b0d13ea45f7c5186199cd801e43a5869.jpg",
+      "sha256": "93b5a10ce60e24d3544321ae95c4bfa1998cc47920fbcc6e259145d8a97ef807"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\upload-65-_jpg.rf.8517010728a9cdc96c2cc65161af2729.jpg",
+      "sha256": "3f3cfeaa3bceaa86da7aa99136e5ddc822427323cef0d071be768d77dcf1d06a"
+    },
+    {
+      "path": "D:\\Deep_learning\\StarEye improve\\mydata\\valid\\images\\upload-76-_jpg.rf.e4c13e05ef742e1742723aae0b63e607.jpg",
+      "sha256": "1777ab1aca0955cbfe984d7962c042314274f349350d49c14d7af2d0f1e65287"
+    }
+  ]
+}

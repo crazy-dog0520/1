@@ -1,0 +1,40 @@
+# StarEye_CAA_SANeck
+# 原始 StarEye (CAA) + SAFusion Neck，不加 MSCAA
+# 用于消融实验：单独验证 SAFusion 的贡献
+#
+# 对比：
+#   StarEye (CAA)          : Concat neck
+#   StarEye_CAA_SANeck     : SAFusion neck  ← 本文件
+#   StarEye_MSCAA          : MSCAA + Concat neck
+#   StarEye_MSCAA_SANeck   : MSCAA + SAFusion neck（完整模型）
+
+nc: 2
+scales:
+  n: [0.33, 0.25, 1024]
+  s: [0.33, 0.50, 1024]
+  m: [0.67, 0.75, 768]
+  l: [1.00, 1.00, 512]
+  x: [1.00, 1.25, 512]
+
+backbone:
+  - [-1, 1, starnet_s050, []]
+  - [-1, 1, SPPF, [1024, 5]]
+
+head:
+  - [-1, 1, nn.Upsample, [None, 2, 'nearest']]
+  - [[-1, 3], 1, SAFusion, [1]]           # 替换 Concat：融合 SPPF↑ + backbone P4
+  - [-1, 3, C2f_Star_CAA, [512]]          # 保持原始 CAA，不换成 MSCAA
+
+  - [-1, 1, nn.Upsample, [None, 2, 'nearest']]
+  - [[-1, 2], 1, SAFusion, [1]]           # 替换 Concat：融合 C2f↑ + backbone P3
+  - [-1, 3, C2f_Star_CAA, [256]]
+
+  - [-1, 1, Conv, [256, 3, 2]]
+  - [[-1, 8], 1, SAFusion, [1]]           # 替换 Concat：融合 Conv↓ + FPN P4
+  - [-1, 3, C2f_Star_CAA, [512]]
+
+  - [-1, 1, Conv, [512, 3, 2]]
+  - [[-1, 5], 1, SAFusion, [1]]           # 替换 Concat：融合 Conv↓ + SPPF
+  - [-1, 3, C2f_Star_CAA, [1024]]
+
+  - [[11, 14, 17], 1, SCBN, [nc, 256]]

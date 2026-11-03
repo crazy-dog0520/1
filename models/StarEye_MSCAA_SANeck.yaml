@@ -1,0 +1,43 @@
+# StarEye_MSCAA_SANeck
+# 在 StarEye_MSCAA 基础上，将 neck 中所有 Concat 替换为 SAFusion
+#
+# 改进点：尺度感知特征融合（Scale-Aware Fusion Neck）
+#   标准 FPN/PAN 的 Concat 对高层语义特征和低层细节特征等权融合，
+#   导致水下小目标（鱼类）的细节特征被大尺度语义特征稀释。
+#   SAFusion 通过 SE 风格通道门控，让模型自适应调整各通道融合权重，
+#   使细节特征在需要时获得更高权重。
+#
+# 组合贡献：
+#   ① MSCAA  — 单层特征提取（双路条带注意力）
+#   ② SAFusion Neck — 跨层特征融合（尺度感知加权）
+
+nc: 2
+scales:
+  n: [0.33, 0.25, 1024]
+  s: [0.33, 0.50, 1024]
+  m: [0.67, 0.75, 768]
+  l: [1.00, 1.00, 512]
+  x: [1.00, 1.25, 512]
+
+backbone:
+  - [-1, 1, starnet_s050, []]
+  - [-1, 1, SPPF, [1024, 5]]
+
+head:
+  - [-1, 1, nn.Upsample, [None, 2, 'nearest']]
+  - [[-1, 3], 1, SAFusion, [1]]           # 替换 Concat：融合 SPPF↑ + backbone P4
+  - [-1, 3, C2f_Star_MSCAA, [512]]
+
+  - [-1, 1, nn.Upsample, [None, 2, 'nearest']]
+  - [[-1, 2], 1, SAFusion, [1]]           # 替换 Concat：融合 C2f↑ + backbone P3
+  - [-1, 3, C2f_Star_MSCAA, [256]]
+
+  - [-1, 1, Conv, [256, 3, 2]]
+  - [[-1, 8], 1, SAFusion, [1]]           # 替换 Concat：融合 Conv↓ + FPN P4
+  - [-1, 3, C2f_Star_MSCAA, [512]]
+
+  - [-1, 1, Conv, [512, 3, 2]]
+  - [[-1, 5], 1, SAFusion, [1]]           # 替换 Concat：融合 Conv↓ + SPPF
+  - [-1, 3, C2f_Star_MSCAA, [1024]]
+
+  - [[11, 14, 17], 1, SCBN, [nc, 256]]

@@ -1,0 +1,13 @@
+﻿Configuration,Seed,overall_mAP50_95,Checkpoint,Data,Split
+StarEye,0,0.588723756874707,D:\Deep_learning\StarEye improve\runs\ablation_100ep\Baseline_s0\weights\best.pt,D:\Deep_learning\StarEye improve\mydata\data.yaml,val
+StarEye,42,0.6479503455206712,D:\Deep_learning\StarEye improve\runs\ablation_100ep\Baseline_s42\weights\best.pt,D:\Deep_learning\StarEye improve\mydata\data.yaml,val
+StarEye,123,0.6061463529632741,D:\Deep_learning\StarEye improve\runs\ablation_100ep\Baseline_s123\weights\best.pt,D:\Deep_learning\StarEye improve\mydata\data.yaml,val
+StarEye + MSCAA,0,0.6247324023157782,D:\Deep_learning\StarEye improve\runs\ablation_100ep\MSCAA_only_s0\weights\best.pt,D:\Deep_learning\StarEye improve\mydata\data.yaml,val
+StarEye + MSCAA,42,0.6307852692630889,D:\Deep_learning\StarEye improve\runs\ablation_100ep\MSCAA_only_s42\weights\best.pt,D:\Deep_learning\StarEye improve\mydata\data.yaml,val
+StarEye + MSCAA,123,0.6061925185169461,D:\Deep_learning\StarEye improve\runs\ablation_100ep\MSCAA_only_s123\weights\best.pt,D:\Deep_learning\StarEye improve\mydata\data.yaml,val
+StarEye + SAFusion,0,0.6195117654234532,D:\Deep_learning\StarEye improve\runs\ablation_100ep\SAFusion_only_s0\weights\best.pt,D:\Deep_learning\StarEye improve\mydata\data.yaml,val
+StarEye + SAFusion,42,0.6367259467327753,D:\Deep_learning\StarEye improve\runs\ablation_100ep\SAFusion_only_s42\weights\best.pt,D:\Deep_learning\StarEye improve\mydata\data.yaml,val
+StarEye + SAFusion,123,0.6471849202038853,D:\Deep_learning\StarEye improve\runs\ablation_100ep\SAFusion_only_s123\weights\best.pt,D:\Deep_learning\StarEye improve\mydata\data.yaml,val
+Joint,0,0.6143835753536581,D:\Deep_learning\StarEye improve\runs\ablation_100ep\MSCAA_SAFusion_s0\weights\best.pt,D:\Deep_learning\StarEye improve\mydata\data.yaml,val
+Joint,42,0.6432260452852153,D:\Deep_learning\StarEye improve\runs\ablation_100ep\MSCAA_SAFusion_s42\weights\best.pt,D:\Deep_learning\StarEye improve\mydata\data.yaml,val
+Joint,123,0.6323744310104731,D:\Deep_learning\StarEye improve\runs\ablation_100ep\MSCAA_SAFusion_s123\weights\best.pt,D:\Deep_learning\StarEye improve\mydata\data.yaml,val

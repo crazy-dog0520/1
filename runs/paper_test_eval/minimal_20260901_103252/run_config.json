@@ -1,0 +1,61 @@
+{
+  "created_at": "2026-09-01T10:32:52",
+  "scope": "minimal",
+  "data": "D:\\Deep_learning\\StarEye improve\\mydata\\data.yaml",
+  "split": "test",
+  "imgsz": 640,
+  "batch": 16,
+  "device": "0",
+  "workers": 0,
+  "plots": false,
+  "seeds": [
+    0,
+    42,
+    123
+  ],
+  "environment": {
+    "python": "3.9.25",
+    "torch": "2.8.0+cu128",
+    "ultralytics": "8.2.50",
+    "cuda_available": true,
+    "cuda_device": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "checkpoints": [
+    {
+      "method": "StarEye",
+      "condition": "Baseline",
+      "seed": 0,
+      "weight": "D:\\Deep_learning\\StarEye improve\\runs\\ablation_100ep\\Baseline_s0\\weights\\best.pt"
+    },
+    {
+      "method": "StarEye",
+      "condition": "Baseline",
+      "seed": 42,
+      "weight": "D:\\Deep_learning\\StarEye improve\\runs\\ablation_100ep\\Baseline_s42\\weights\\best.pt"
+    },
+    {
+      "method": "StarEye",
+      "condition": "Baseline",
+      "seed": 123,
+      "weight": "D:\\Deep_learning\\StarEye improve\\runs\\ablation_100ep\\Baseline_s123\\weights\\best.pt"
+    },
+    {
+      "method": "StarEye+SAFusion",
+      "condition": "SAFusion_only",
+      "seed": 0,
+      "weight": "D:\\Deep_learning\\StarEye improve\\runs\\ablation_100ep\\SAFusion_only_s0\\weights\\best.pt"
+    },
+    {
+      "method": "StarEye+SAFusion",
+      "condition": "SAFusion_only",
+      "seed": 42,
+      "weight": "D:\\Deep_learning\\StarEye improve\\runs\\ablation_100ep\\SAFusion_only_s42\\weights\\best.pt"
+    },
+    {
+      "method": "StarEye+SAFusion",
+      "condition": "SAFusion_only",
+      "seed": 123,
+      "weight": "D:\\Deep_learning\\StarEye improve\\runs\\ablation_100ep\\SAFusion_only_s123\\weights\\best.pt"
+    }
+  ]
+}

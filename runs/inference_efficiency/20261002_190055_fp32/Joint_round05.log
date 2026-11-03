@@ -1,0 +1,7 @@
+D:\Deep_learning\StarEye improve\.python_packages\timm\models\layers\__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+StarEye_MSCAA_SANeck summary: 313 layers, 3614581 parameters, 0 gradients, 25.6 GFLOPs
+[Joint, round 5, forward] warmup=100
+  mean=7.424 ms, P95=8.401 ms, serial FPS=134.42, peak allocated=98.2 MiB
+[Joint, round 5, pipeline] warmup=100
+  mean=10.191 ms, P95=12.921 ms, serial FPS=98.05, peak allocated=104.4 MiB

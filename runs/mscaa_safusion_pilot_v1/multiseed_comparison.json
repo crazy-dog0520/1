@@ -1,0 +1,247 @@
+﻿{
+    "protocol":  {
+                     "data":  "D:\\Deep_learning\\StarEye improve\\mydata\\data.yaml",
+                     "split":  "val",
+                     "imgsz":  640,
+                     "batch":  16,
+                     "workers":  0,
+                     "device":  "0",
+                     "seeds":  [
+                                   0,
+                                   42,
+                                   123
+                               ]
+                 },
+    "raw_results":  [
+                        {
+                            "method":  "StarEye",
+                            "seed":  0,
+                            "weights":  "D:\\Deep_learning\\StarEye improve\\runs\\ablation_100ep\\Baseline_s0\\weights\\best.pt",
+                            "data":  "D:\\Deep_learning\\StarEye improve\\mydata\\data.yaml",
+                            "split":  "val",
+                            "overall_mAP50_95":  0.588723756874707,
+                            "overall_mAP50":  0.8725445491618351,
+                            "human_mAP50_95":  0.7681338504820777,
+                            "human_AP50":  0.9800297492388687,
+                            "fish_mAP50_95":  0.4093136632673362,
+                            "fish_AP50":  0.7650593490848017
+                        },
+                        {
+                            "method":  "StarEye",
+                            "seed":  42,
+                            "weights":  "D:\\Deep_learning\\StarEye improve\\runs\\ablation_100ep\\Baseline_s42\\weights\\best.pt",
+                            "data":  "D:\\Deep_learning\\StarEye improve\\mydata\\data.yaml",
+                            "split":  "val",
+                            "overall_mAP50_95":  0.6479503455206712,
+                            "overall_mAP50":  0.9261324900050801,
+                            "human_mAP50_95":  0.7816071336485806,
+                            "human_AP50":  0.9812777573542996,
+                            "fish_mAP50_95":  0.5142935573927618,
+                            "fish_AP50":  0.8709872226558607
+                        },
+                        {
+                            "method":  "StarEye",
+                            "seed":  123,
+                            "weights":  "D:\\Deep_learning\\StarEye improve\\runs\\ablation_100ep\\Baseline_s123\\weights\\best.pt",
+                            "data":  "D:\\Deep_learning\\StarEye improve\\mydata\\data.yaml",
+                            "split":  "val",
+                            "overall_mAP50_95":  0.6061463529632741,
+                            "overall_mAP50":  0.9252610604681277,
+                            "human_mAP50_95":  0.7794564353566014,
+                            "human_AP50":  0.9834996118333093,
+                            "fish_mAP50_95":  0.4328362705699467,
+                            "fish_AP50":  0.8670225091029461
+                        },
+                        {
+                            "method":  "MSCAA only",
+                            "seed":  0,
+                            "weights":  "D:\\Deep_learning\\StarEye improve\\runs\\ablation_100ep\\MSCAA_only_s0\\weights\\best.pt",
+                            "data":  "D:\\Deep_learning\\StarEye improve\\mydata\\data.yaml",
+                            "split":  "val",
+                            "overall_mAP50_95":  0.6247324023157782,
+                            "overall_mAP50":  0.930574842216777,
+                            "human_mAP50_95":  0.7692241276612524,
+                            "human_AP50":  0.983380657155329,
+                            "fish_mAP50_95":  0.48024067697030404,
+                            "fish_AP50":  0.8777690272782251
+                        },
+                        {
+                            "method":  "MSCAA only",
+                            "seed":  42,
+                            "weights":  "D:\\Deep_learning\\StarEye improve\\runs\\ablation_100ep\\MSCAA_only_s42\\weights\\best.pt",
+                            "data":  "D:\\Deep_learning\\StarEye improve\\mydata\\data.yaml",
+                            "split":  "val",
+                            "overall_mAP50_95":  0.6307852692630889,
+                            "overall_mAP50":  0.9051027588503358,
+                            "human_mAP50_95":  0.782209951826489,
+                            "human_AP50":  0.9854304020117625,
+                            "fish_mAP50_95":  0.4793605866996885,
+                            "fish_AP50":  0.8247751156889089
+                        },
+                        {
+                            "method":  "MSCAA only",
+                            "seed":  123,
+                            "weights":  "D:\\Deep_learning\\StarEye improve\\runs\\ablation_100ep\\MSCAA_only_s123\\weights\\best.pt",
+                            "data":  "D:\\Deep_learning\\StarEye improve\\mydata\\data.yaml",
+                            "split":  "val",
+                            "overall_mAP50_95":  0.6061925185169461,
+                            "overall_mAP50":  0.9200997974318377,
+                            "human_mAP50_95":  0.7711246689269524,
+                            "human_AP50":  0.9787512312293963,
+                            "fish_mAP50_95":  0.4412603681069397,
+                            "fish_AP50":  0.8614483636342791
+                        },
+                        {
+                            "method":  "SAFusion only",
+                            "seed":  0,
+                            "weights":  "D:\\Deep_learning\\StarEye improve\\runs\\ablation_100ep\\SAFusion_only_s0\\weights\\best.pt",
+                            "data":  "D:\\Deep_learning\\StarEye improve\\mydata\\data.yaml",
+                            "split":  "val",
+                            "overall_mAP50_95":  0.6195117654234532,
+                            "overall_mAP50":  0.9252185202999142,
+                            "human_mAP50_95":  0.7762728841919828,
+                            "human_AP50":  0.9775878209788699,
+                            "fish_mAP50_95":  0.4627506466549235,
+                            "fish_AP50":  0.8728492196209586
+                        },
+                        {
+                            "method":  "SAFusion only",
+                            "seed":  42,
+                            "weights":  "D:\\Deep_learning\\StarEye improve\\runs\\ablation_100ep\\SAFusion_only_s42\\weights\\best.pt",
+                            "data":  "D:\\Deep_learning\\StarEye improve\\mydata\\data.yaml",
+                            "split":  "val",
+                            "overall_mAP50_95":  0.6367259467327753,
+                            "overall_mAP50":  0.9352776314004198,
+                            "human_mAP50_95":  0.757268651598072,
+                            "human_AP50":  0.9798173076457708,
+                            "fish_mAP50_95":  0.5161832418674785,
+                            "fish_AP50":  0.8907379551550687
+                        },
+                        {
+                            "method":  "SAFusion only",
+                            "seed":  123,
+                            "weights":  "D:\\Deep_learning\\StarEye improve\\runs\\ablation_100ep\\SAFusion_only_s123\\weights\\best.pt",
+                            "data":  "D:\\Deep_learning\\StarEye improve\\mydata\\data.yaml",
+                            "split":  "val",
+                            "overall_mAP50_95":  0.6471849202038853,
+                            "overall_mAP50":  0.9356326831601266,
+                            "human_mAP50_95":  0.7859530590350944,
+                            "human_AP50":  0.9797642462254957,
+                            "fish_mAP50_95":  0.5084167813726763,
+                            "fish_AP50":  0.8915011200947575
+                        },
+                        {
+                            "method":  "Post-fusion MSCAA+SAFusion",
+                            "seed":  0,
+                            "weights":  "D:\\Deep_learning\\StarEye improve\\runs\\ablation_100ep\\MSCAA_SAFusion_s0\\weights\\best.pt",
+                            "data":  "D:\\Deep_learning\\StarEye improve\\mydata\\data.yaml",
+                            "split":  "val",
+                            "overall_mAP50_95":  0.6143835753536581,
+                            "overall_mAP50":  0.92367343274667,
+                            "human_mAP50_95":  0.7776718926595108,
+                            "human_AP50":  0.9861917603496323,
+                            "fish_mAP50_95":  0.45109525804780554,
+                            "fish_AP50":  0.8611551051437077
+                        },
+                        {
+                            "method":  "Post-fusion MSCAA+SAFusion",
+                            "seed":  42,
+                            "weights":  "D:\\Deep_learning\\StarEye improve\\runs\\ablation_100ep\\MSCAA_SAFusion_s42\\weights\\best.pt",
+                            "data":  "D:\\Deep_learning\\StarEye improve\\mydata\\data.yaml",
+                            "split":  "val",
+                            "overall_mAP50_95":  0.6432260452852153,
+                            "overall_mAP50":  0.9391531132004062,
+                            "human_mAP50_95":  0.7820143673709465,
+                            "human_AP50":  0.9816106791562145,
+                            "fish_mAP50_95":  0.5044377231994841,
+                            "fish_AP50":  0.8966955472445979
+                        },
+                        {
+                            "method":  "Post-fusion MSCAA+SAFusion",
+                            "seed":  123,
+                            "weights":  "D:\\Deep_learning\\StarEye improve\\runs\\ablation_100ep\\MSCAA_SAFusion_s123\\weights\\best.pt",
+                            "data":  "D:\\Deep_learning\\StarEye improve\\mydata\\data.yaml",
+                            "split":  "val",
+                            "overall_mAP50_95":  0.6323744310104731,
+                            "overall_mAP50":  0.9176080582727247,
+                            "human_mAP50_95":  0.753815772134408,
+                            "human_AP50":  0.9745720619645527,
+                            "fish_mAP50_95":  0.5109330898865381,
+                            "fish_AP50":  0.8606440545808968
+                        }
+                    ],
+    "summary":  {
+                    "StarEye":  {
+                                    "overall_mAP50_95":  {
+                                                             "mean":  0.6142734851195507,
+                                                             "sample_sd":  0.030438214607196548
+                                                         },
+                                    "overall_mAP50":  {
+                                                          "mean":  0.9079793665450143,
+                                                          "sample_sd":  0.030690545117249276
+                                                      },
+                                    "human_mAP50_95":  {
+                                                           "mean":  0.7763991398290866,
+                                                           "sample_sd":  0.007238275469897089
+                                                       },
+                                    "fish_mAP50_95":  {
+                                                          "mean":  0.4521478304100149,
+                                                          "sample_sd":  0.05508989744262368
+                                                      }
+                                },
+                    "MSCAA only":  {
+                                       "overall_mAP50_95":  {
+                                                                "mean":  0.620570063365271,
+                                                                "sample_sd":  0.012813845889102067
+                                                            },
+                                       "overall_mAP50":  {
+                                                             "mean":  0.9185924661663168,
+                                                             "sample_sd":  0.012802765069106976
+                                                         },
+                                       "human_mAP50_95":  {
+                                                              "mean":  0.7741862494715646,
+                                                              "sample_sd":  0.007013406011772867
+                                                          },
+                                       "fish_mAP50_95":  {
+                                                             "mean":  0.4669538772589774,
+                                                             "sample_sd":  0.022255582426224944
+                                                         }
+                                   },
+                    "SAFusion only":  {
+                                          "overall_mAP50_95":  {
+                                                                   "mean":  0.6344742107867046,
+                                                                   "sample_sd":  0.013973317786179412
+                                                               },
+                                          "overall_mAP50":  {
+                                                                "mean":  0.9320429449534869,
+                                                                "sample_sd":  0.0059127907393408605
+                                                            },
+                                          "human_mAP50_95":  {
+                                                                 "mean":  0.7731648649417164,
+                                                                 "sample_sd":  0.014592588709625728
+                                                             },
+                                          "fish_mAP50_95":  {
+                                                                "mean":  0.49578355663169277,
+                                                                "sample_sd":  0.02886969576050879
+                                                            }
+                                      },
+                    "Post-fusion MSCAA+SAFusion":  {
+                                                       "overall_mAP50_95":  {
+                                                                                "mean":  0.6299946838831155,
+                                                                                "sample_sd":  0.014567752579956222
+                                                                            },
+                                                       "overall_mAP50":  {
+                                                                             "mean":  0.9268115347399336,
+                                                                             "sample_sd":  0.011110045501675337
+                                                                         },
+                                                       "human_mAP50_95":  {
+                                                                              "mean":  0.771167344054955,
+                                                                              "sample_sd":  0.01518295286630055
+                                                                          },
+                                                       "fish_mAP50_95":  {
+                                                                             "mean":  0.4888220237112759,
+                                                                             "sample_sd":  0.03283335320477681
+                                                                         }
+                                                   }
+                }
+}

@@ -1,0 +1,34 @@
+# StarEye_MSCAA: 将 neck 中所有 C2f_Star_CAA 替换为 C2f_Star_MSCAA
+# 改进点：单尺度条带（1×11）→ 多尺度条带（1×11 + 1×7 并行融合）
+# 消融对比：StarEye.yaml（单尺度） vs 本文件（多尺度）
+
+nc: 2
+scales:
+  n: [0.33, 0.25, 1024]
+  s: [0.33, 0.50, 1024]
+  m: [0.67, 0.75, 768]
+  l: [1.00, 1.00, 512]
+  x: [1.00, 1.25, 512]
+
+backbone:
+  - [-1, 1, starnet_s050, []]
+  - [-1, 1, SPPF, [1024, 5]]
+
+head:
+  - [-1, 1, nn.Upsample, [None, 2, 'nearest']]
+  - [[-1, 3], 1, Concat, [1]]
+  - [-1, 3, C2f_Star_MSCAA, [512]]
+
+  - [-1, 1, nn.Upsample, [None, 2, 'nearest']]
+  - [[-1, 2], 1, Concat, [1]]
+  - [-1, 3, C2f_Star_MSCAA, [256]]
+
+  - [-1, 1, Conv, [256, 3, 2]]
+  - [[-1, 8], 1, Concat, [1]]
+  - [-1, 3, C2f_Star_MSCAA, [512]]
+
+  - [-1, 1, Conv, [512, 3, 2]]
+  - [[-1, 5], 1, Concat, [1]]
+  - [-1, 3, C2f_Star_MSCAA, [1024]]
+
+  - [[11, 14, 17], 1, SCBN, [nc, 256]]
